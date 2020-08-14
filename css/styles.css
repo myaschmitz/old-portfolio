@@ -360,8 +360,18 @@ footer div {
 
 #my-form {
     position: relative;
-    width: 500px;
+    max-width: 500px;
     margin: 0px auto 100px auto;
+}
+
+@media screen and (max-width: 414px) {
+    .form-items {
+        max-width: 300px;
+    }
+
+    .form-submit {
+        max-width: 332px;
+    }
 }
 
 input, button {
