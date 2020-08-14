@@ -67,7 +67,7 @@ nav {
     list-style-type: none;
 }
 
-.menu a:hover {
+.menu a:hover, .menu a:active {
     font-weight: bold;
 }
 
@@ -140,7 +140,7 @@ a.body-text {
     border-color: #eff8ff;
 }
 
-a.body-text:hover {
+a.body-text:hover, a.body-text:active {
     font-weight: bold;
 }
 
@@ -226,7 +226,7 @@ a.body-text:hover {
 	transition: all 0.4s ease-in-out;
 }
 
-.ch-item:hover {
+.ch-item:hover, .ch-item:active {
 	box-shadow: 
 		inset 0 0 0 1px rgba(255,255,255,0.1),
 		0 1px 2px rgba(0,0,0,0.1);
@@ -244,7 +244,7 @@ a.body-text:hover {
 	transform: scale(0);
 }
 
-.ch-item:hover .ch-info {
+.ch-item:hover .ch-info, .ch-item:active .ch-info {
 	transform: scale(1);
 	opacity: 1;
 }
@@ -318,7 +318,7 @@ footer div {
     animation: in 1s;
 }
 
-.circle-bg:hover {
+.circle-bg:hover, .circle-bg:active {
     transition: 1s !important;
     background: #004A59;
     -webkit-animation: out 1s !important;
@@ -343,8 +343,7 @@ footer div {
     100% { -webkit-transform: rotate(0deg); transition: 1s; }
 }
 
-.fa:hover {
-    /* color: darken(dark-gray, 25%); */
+.fa:hover, .fa:active {
     transition: color 0.3s ease-in;
     transform: rotate(360deg);
 }
@@ -389,11 +388,11 @@ input::placeholder {
     color: #eff8ff;
 }
 
-input:hover::placeholder {
+input:hover::placeholder, input:active::placeholder {
     color: #004A59;
 }
 
-input:hover {
+input:hover, input:active {
     background: #eff8ff;
     color: #004A59;
 }
@@ -425,11 +424,11 @@ textarea::placeholder {
     color: #eff8ff;
 }
 
-textarea:hover::placeholder {
+textarea:hover::placeholder, textarea:active::placeholder {
     color: #004A59;
 }
   
-textarea:hover {
+textarea:hover, textarea:hover {
     background: #eff8ff;
     color: #004A59;
 }
@@ -451,7 +450,7 @@ textarea:hover {
     border-top: none;
 }
   
-#submit:hover {
+#submit:hover, #submit:active {
     color: #eff8ff;
     background: #1f6472;
 }
