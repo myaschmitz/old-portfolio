@@ -314,13 +314,15 @@ footer div {
     height: 1.8em;
     font-size: 1em;
     line-height: 1.8em !important;
-    -webkit-animation: in 1s;
+    -webkit-animation: in 1s !important;
+    animation: in 1s;
 }
 
 .circle-bg:hover {
     transition: 1s !important;
     background: #004A59;
-    -webkit-animation: out 1s;
+    -webkit-animation: out 1s !important;
+    animation: in 1s;
 }
 
 @-webkit-keyframes in {
