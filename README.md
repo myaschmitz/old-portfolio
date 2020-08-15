@@ -1,6 +1,4 @@
 # Portfolio Website
- It's created primarily using HTML, CSS, and JavaScript to design and animate the various elements.
-
 ## Table of Contents
 * [General Info](#general-info)
 * [Technologies Used](#technologies-used)
