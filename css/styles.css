@@ -8,7 +8,9 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url('../img/mtn-bg.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
