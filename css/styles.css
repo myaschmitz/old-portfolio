@@ -10,6 +10,9 @@ body {
     background-image: url('../img/mtn-bg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     font-family: 'Helvetica', sans-serif;
     font-weight: 100;
