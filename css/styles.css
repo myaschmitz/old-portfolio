@@ -137,12 +137,6 @@ nav {
     }
 }
 
-/* @media screen and (min-width: 600px) {
-    .push-down {
-        margin-top: 250px;
-    }
-} */
-
 .dropdown {
     float: left;
     overflow: hidden;
@@ -404,7 +398,7 @@ footer div {
 /* Skills bar start */
 .skills-bar-main {
     margin: auto;
-    max-width: 90%;
+    max-width: 800px !important;
     width: 90% !important;
     background-color: transparent;
     text-align: left;
@@ -419,7 +413,7 @@ footer div {
 }
 
 /* Skill ratings */
-.sk-armassembly { width: 60% }
+.sk-armassembly { width: 55% }
 .sk-aspnet { width: 75% }
 .sk-c { width: 60% }
 .sk-cpp { width: 30% }
