@@ -1,4 +1,4 @@
-/* Entire page styles */
+/* Entire page styles start */
 .page-container {
     position: relative;
     min-height: 94vh;
@@ -7,14 +7,13 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 0px;
     background-image: url('../img/mtn-bg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Helvetica', sans-serif;
     font-weight: 100;
-    margin-top: 25px;
+    margin: 25px 0 0 0;
 }
 
 body:after {
@@ -22,6 +21,7 @@ body:after {
     display: table;
     clear: both;
 }
+/* Entire page styles end */
 
 
 /* Navigation styles start */
@@ -30,7 +30,7 @@ header {
     position: fixed;
     z-index: 999;
     top: 0;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
     flex-shrink: 0;
 }
@@ -77,11 +77,11 @@ nav {
 
 .scrolled {
     transition: 200ms linear;
-    background: #004A59;
+    background: #00333d;
 }
 
 .push-down {
-    margin-top: 250px;
+    margin-top: 250px !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -109,20 +109,24 @@ nav {
     }
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     .push-down {
-        margin-top: 0px;
+        margin-top: 250px;
     }
-}
+} */
 
 .dropdown {
     float: left;
     overflow: hidden;
 }
+/* Navigation styles end */
 
 /* Body styling start */
 .body-text {
+    line-height: 1.75em;
     text-align: center;
+    position: relative;
+    margin: auto;
     top: 100%;
     font-family: 'Helvetica', sans-serif;
     font-weight: 100;
@@ -144,8 +148,23 @@ a.body-text:hover, a.body-text:active {
     font-weight: bold;
 }
 
+.body-text-max {
+    max-width: 350px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
 .body-header {
     font-size: 3.5em;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 75px;
+}
+
+.body-title {
+    font-size: 2em;
     font-weight: 600;
     padding-bottom: 10px;
     padding-top: 50px;
@@ -234,7 +253,7 @@ a.body-text:hover, a.body-text:active {
 
 .ch-info {
 	position: absolute;
-	background: rgba(83, 108, 126, 0.8);
+	background: rgba(76, 95, 99, 0.8);
 	width: inherit;
 	height: inherit;
 	border-radius: 50%;
@@ -260,17 +279,18 @@ a.body-text:hover, a.body-text:active {
     text-align: center;
 	font-family: 'Helvetica', sans-serif;
 	text-shadow: 
-		0 0 1px #fff, 
+		0 0 1px rgb(66, 80, 87), 
 		0 1px 2px rgba(0,0,0,0.3);
 }
 
 .text-one-line {
-	padding: 64.5px 0 0 0;
+	padding: 62px 0 0 0;
 }
 
 .text-two-line {
-	padding: 57px 0 0 0;
+	padding: 50px 0 0 0;
 }
+/* Body styling end */
 
 /* Footer styling start */
 footer {
@@ -320,7 +340,7 @@ footer div {
 
 .circle-bg:hover, .circle-bg:active {
     transition: 1s !important;
-    background: #004A59;
+    background: #00333d;
     -webkit-animation: out 1s !important;
     animation: in 1s;
 }
@@ -351,6 +371,59 @@ footer div {
 .footer-icons {
     color: #eff8ff;
 }
+/* Footer styling end */
+
+/* Skills bar start */
+.skills-bar-main {
+    margin: auto;
+    max-width: 90%;
+    width: 90% !important;
+    background-color: transparent;
+    text-align: left;
+    position: relative;
+}
+
+.skills-bar-bg {
+    background-color: #c5eaee;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Skill ratings */
+.sk-armassembly { width: 60% }
+.sk-aspnet { width: 75% }
+.sk-c { width: 60% }
+.sk-cpp { width: 30% }
+.sk-csharp { width: 70% }
+.sk-css { width: 90% }
+.sk-git { width: 75% }
+.sk-html { width: 90%; }
+.sk-java { width: auto; }
+.sk-javascript { width: 75% }
+.sk-jquery { width: 75% }
+.sk-python { width: 25% }
+.sk-sql { width: 40% }
+.sk-verilog { width: 20% }
+
+.skills-bg {
+    background-color: #194b5a;
+    margin: 10px 0px;
+    padding: 2px 10px;
+    border-radius: 4.5px;
+}
+/* Skills bars end */
+
+/* Favorites start */
+.fav-bg {
+    display: inline-block;
+    background-color: #194b5a;
+    margin: 4px 2px;
+    padding: 2px 10px;
+    border-radius: 4.5px;
+    max-width: max-content;
+}
+/* Favorites end */
 
 /* Contact form start */
 .contact-form {
@@ -364,7 +437,7 @@ footer div {
     margin: 0px auto 100px auto;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 510px) {
     .form-items {
         max-width: 300px;
     }
@@ -374,7 +447,7 @@ footer div {
     }
 }
 
-input, button {
+input, button, textarea {
     font-family: 'Lato', sans-serif;
     font-size: 0.875em;
     width: 470px;
@@ -393,41 +466,28 @@ input, button {
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
 }
+  
+textarea {
+    width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    resize: none;
+    font-size: 0.875em;
+    border: solid 1px #eff8ff;
+}
 
 input::placeholder {
     color: #eff8ff;
 }
 
 input:hover::placeholder, input:active::placeholder {
-    color: #004A59;
+    color: #00333d;
 }
 
 input:hover, input:active {
     background: #eff8ff;
-    color: #004A59;
-}
-  
-textarea {
-    width: 470px;
-    max-width: 470px;
-    height: 110px;
-    max-height: 110px;
-    padding: 15px;
-    resize: none;
-    
-    background: transparent;
-    outline: none;
-    
-    color: #eff8ff;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 0.875em;
-    
-    border: solid 1px #eff8ff;
-    
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
+    color: #00333d;
 }
 
 textarea::placeholder {
@@ -435,32 +495,85 @@ textarea::placeholder {
 }
 
 textarea:hover::placeholder, textarea:active::placeholder {
-    color: #004A59;
+    color: #00333d;
 }
   
 textarea:hover, textarea:active {
     background: #eff8ff;
-    color: #004A59;
+    color: #00333d;
 }
   
 #submit {
     width: 502px;
-    
     padding: 0;
-    margin: -5px 0px 0px 0px;
-    
+    margin: -9px 0px 0px 0px;
     font-size: 0.875em;
     font-family: 'Helvetica', sans-serif;
     color: #eff8ff;
-    
     outline: none;
     cursor: pointer;
-    
     border: solid 1px #eff8ff;
     border-top: none;
 }
   
 #submit:hover, #submit:active {
     color: #eff8ff;
-    background: #1f6472;
+    background: #062831;
+    border: solid 1px #eff8ff
 }
+/* Contact form end */
+
+/* About me timeline start */
+.timeline-main {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+  padding: 0px 40px 10px 40px;
+}
+
+.timeline-p {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #194b5a 0%, #a8bec4 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color: #eff8ff;
+}
+
+/* Odd number borders */
+.timeline-p:nth-child(odd) {
+  border-right: 3px solid;
+}
+  
+.timeline-p:nth-child(odd):before {
+    left: 100%; 
+    margin-left: -20px;
+}
+
+/* Even number borders */
+.timeline-p:nth-child(even) {
+  border-left: 3px solid;
+}
+
+.timeline-p:nth-child(even):before {
+    right: 100%; 
+    margin-right: -20px;
+}
+
+/* First and last events */
+.timeline-p:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+.timeline-p:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+/* About me timeline end */

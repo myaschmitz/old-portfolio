@@ -1,17 +1,19 @@
 // Hamburger responsive navbar
 function hamResponse() {
   var menu = document.getElementById("topnav-menu");
-  var pageBody = document.getElementById("page-body")
+  var pageBody = document.getElementById("page-body");
+  var navPages = document.getElementById("nav-pages");
+
   if (menu.className === "menu") {
     menu.className += " responsive";
   } else {
     menu.className = "menu";
   }
   
-  if (pageBody.className === "body-text") {
+  if (pageBody.className === "footer-space body-text") {
     pageBody.className += " push-down";
   } else {
-    pageBody.className = "body-text";
+    pageBody.className = "footer-space body-text";
   }
 }
 
