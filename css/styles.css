@@ -413,20 +413,20 @@ footer div {
 }
 
 /* Skill ratings */
-.sk-armassembly { width: 55% }
+.sk-armassembly { width: 25% }
 .sk-aspnet { width: 75% }
-.sk-c { width: 60% }
+.sk-c { width: 90% }
 .sk-cpp { width: 30% }
 .sk-csharp { width: 70% }
 .sk-css { width: 90% }
 .sk-git { width: 75% }
 .sk-html { width: 90%; }
-.sk-java { width: auto; }
-.sk-javascript { width: 75% }
+.sk-java { width: 70%; }
+.sk-javascript { width: 80% }
 .sk-jquery { width: 75% }
-.sk-python { width: 25% }
+.sk-python { width: 80% }
 .sk-sql { width: 40% }
-.sk-verilog { width: 20% }
+.sk-verilog { width: 90% }
 
 .skills-bg {
     background-color: #194b5a;
